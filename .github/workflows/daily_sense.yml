@@ -2,7 +2,7 @@ name: Daily Common Sense Bot
 
 on:
   schedule:
-    - cron: '0 8 * * *'   # UTC时间8:00 = 北京时间16:00（下午4点）
+    - cron: '0 8 * * *'   # UTC时间8:00
   workflow_dispatch: {}   # 保留手动触发
 
 jobs:
