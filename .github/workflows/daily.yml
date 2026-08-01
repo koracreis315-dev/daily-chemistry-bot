@@ -1,0 +1,24 @@
+name: Daily Chemistry Bot
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # UTC时间22:00，即北京时间次日早上6:00[reference:12]
+  workflow_dispatch:      # 支持手动触发[reference:13]
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v4[reference:14]
+      - name: 配置 Python
+        uses: actions/setup-python@v5[reference:15]
+        with:
+          python-version: '3.11'[reference:16]
+      - name: 安装依赖
+        run: pip install -r requirements.txt[reference:17]
+      - name: 运行智能体
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          SERVER_CHAN_KEY: ${{ secrets.SERVER_CHAN_KEY }}
+        run: python daily_chemistry.py
