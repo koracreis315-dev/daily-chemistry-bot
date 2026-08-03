@@ -5,6 +5,10 @@ on:
     - cron: '30 8 * * *'  # UTC时间8:30
   workflow_dispatch: {}   # 支持手动触发（写为{}更安全）
 
+# ===== 关键：授予脚本 push 权限 =====
+permissions:
+  contents: write
+  
 jobs:
   run-bot:
     runs-on: ubuntu-latest
