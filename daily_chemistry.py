@@ -6,6 +6,7 @@ from datetime import datetime
 import os
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 SERVER_CHAN_KEY = os.getenv("SERVER_CHAN_KEY")
+TOPIC_TYPE = "chemistry"
 
 # ================= 智能体核心 Prompt =================
 SYSTEM_PROMPT = """
