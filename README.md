@@ -1,4 +1,4 @@
-~~~json
+```
 📚 每日知识推送机器人
 
 基于 GitHub Actions 和 DeepSeek API 实现的自动化知识推送系统。每天定时向微信推送三份风格各异的知识简报：化学推理、生活常识、历史人物。
@@ -54,7 +54,7 @@
 # ===== 关键：授予脚本 push 权限 =====
 permissions:
   contents: write
-~~~
+```
 
 
 
