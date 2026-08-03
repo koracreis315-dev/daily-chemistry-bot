@@ -5,6 +5,10 @@ on:
     - cron: '0 9 * * *'   # UTC时间9:00 
   workflow_dispatch: {}     # 保留手动触发
 
+# ===== 关键：授予脚本 push 权限 =====
+permissions:
+  contents: write
+  
 jobs:
   run-history-bot:
     runs-on: ubuntu-latest
