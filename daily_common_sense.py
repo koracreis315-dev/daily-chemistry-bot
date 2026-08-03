@@ -5,6 +5,7 @@ from datetime import datetime
 # ================= 从环境变量读取密钥 =================
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 SERVER_CHAN_KEY = os.getenv("SERVER_CHAN_KEY")
+TOPIC_TYPE = "sense"
 
 # ================= 常识专用提示词 =================
 SYSTEM_PROMPT = """
