@@ -16,21 +16,22 @@
 
 
 .
-├── .github/workflows/ # GitHub Actions 工作流配置
-│ ├── daily.yml # 化学推送工作流 (Cron: 每日 UTC 8:30)
-│ ├── daily_sense.yml # 常识推送工作流 (Cron: 每日 UTC 9:00)
-│ └── daily_history.yml # 历史推送工作流 (Cron: 每日 UTC 9:30)
+├── .github/
+│   └── workflows/
+│       ├── daily.yml                 # 化学推送工作流
+│       ├── daily_sense.yml           # 常识推送工作流
+│       └── daily_history.yml         # 历史推送工作流
 │
-├── daily_chemistry.py # 化学推送核心脚本
-├── daily_sense.py # 常识推送核心脚本
-├── daily_history.py # 历史推送核心脚本
-├── memory_utils.py # 记忆管理工具箱（读写 JSON、自动裁切）
+├── daily_chemistry.py                # 化学推送核心脚本
+├── daily_sense.py                    # 常识推送核心脚本
+├── daily_history.py                  # 历史推送核心脚本
+├── memory_utils.py                   # 记忆管理工具箱
 │
-├── memory_chemistry.json # 自动生成：化学已推主题列表
-├── memory_sense.json # 自动生成：常识已推主题列表
-├── memory_history.json # 自动生成：历史已推主题列表
+├── memory_chemistry.json             # 自动生成：化学已推主题
+├── memory_sense.json                 # 自动生成：常识已推主题
+├── memory_history.json               # 自动生成：历史已推主题
 │
-└── README.md # 项目说明文档
+└── README.md                         # 项目说明文档
 
 text
 
